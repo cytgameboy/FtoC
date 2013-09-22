@@ -7,12 +7,18 @@
 //
 
 #include <iostream>
-
-int main(int argc, const char * argv[])
+using namespace std;
+double FtoC(double F)
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    return (F-32)*5/9;
+}
+int main()
+{
+    double F,c;
+    cout<<"input F:";
+    cin>>F;
+    c=FtoC(F);
+    cout<<c<<endl;
     return 0;
 }
 
